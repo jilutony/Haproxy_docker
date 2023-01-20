@@ -24,10 +24,10 @@ The HAproxy load balancer has been utilized inside Docker containers.
    -v $(pwd):/usr/local/etc/haproxy:ro \
    -p 80:80 \
    -p 8404:8404 \
-   haproxytech/haproxy-alpine:2.4```
+   haproxytech/haproxy-alpine:2.4 ```
    
-   As soon as make any modifications to that file, reload the haproxy configuration.
+As soon as make any modifications to that file, reload the haproxy configuration.
    
-   sudo docker kill -s HUP haproxy
+   ```sudo docker kill -s HUP haproxy```
    
    

@@ -18,7 +18,7 @@ The HAproxy load balancer has been utilized inside Docker containers.
  
  Next, create and run an HAProxy container and map its port 80 to host's 80 port by including the -p argument. Also map port 8404 for the HAProxy Stats page:
 
-```$ sudo docker run -d \
+``` sudo docker run -d \
    --name haproxy \
    --net mynetwork \
    -v $(pwd):/usr/local/etc/haproxy:ro \
